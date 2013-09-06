@@ -1,0 +1,3305 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY patterns "http://www.co-ode.org/patterns#" >
+    <!ENTITY kupo "http://www.kupkb.org/data/kupo/" >
+    <!ENTITY kupo3 "http://www.e-lico.eu/public/kupo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY kupo2 "http://www.kupkb.org/public/kupo/" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY disease_ontology "http://purl.org/obo/owlapi/disease_ontology#" >
+]>
+
+
+<rdf:RDF xmlns="&kupo2;kupo-models.owl#"
+     xml:base="&kupo2;kupo-models.owl"
+     xmlns:kupo3="http://www.e-lico.eu/public/kupo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:kupo2="http://www.kupkb.org/public/kupo/"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:disease_ontology="http://purl.org/obo/owlapi/disease_ontology#"
+     xmlns:kupo="http://www.kupkb.org/data/kupo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="&kupo2;kupo-models.owl">
+        <owl:imports rdf:resource="&kupo2;kupo-disease.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&patterns;createdBy"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&skos;altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/mimics -->
+
+    <owl:ObjectProperty rdf:about="&kupo;mimics"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_1184 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_1184"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_1312 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_1312"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2370 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2370"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2921 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2921"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2975 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2975"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2986 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2986"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_3021 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_3021"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_4783 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_4783"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_5199 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_5199"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_784 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_784"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000004 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000004"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000005 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000005">
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000004"/>
+        <skos:altLabel rdf:datatype="&xsd;string">In vivo model</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">In vivo model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000006 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000006"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100001 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100001"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100002 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100002"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100003 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100003"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100004 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100004"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100005 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100005"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100006 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100006"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100007 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100007"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100012 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100012">
+        <rdfs:label xml:lang="en">Polycystic kidney disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100020 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100020"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200001 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200001">
+        <rdfs:label xml:lang="en">Genetic model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200001"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200002 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200002">
+        <rdfs:label xml:lang="en">Spontaneous genetic trait model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200002"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200003 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200003">
+        <rdfs:label xml:lang="en">Transgenic model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200003"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200004 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200004">
+        <rdfs:label xml:lang="en">Knock-out model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200004"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200005 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200005">
+        <rdfs:label xml:lang="en">Surgical model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200005"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200006 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200006">
+        <rdfs:label xml:lang="en">Renal ablation model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200005"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Nephrectomy model</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200006"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Nephrectomy model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200006"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200007 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200007">
+        <rdfs:label xml:lang="en">Agent-induced model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200007"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200008 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200008">
+        <rdfs:label xml:lang="en">Metabolic model of nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200008"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200009 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200009">
+        <rdfs:label xml:lang="en">Diabetic nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2370"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200009"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2370"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200008"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200009"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200010 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200010">
+        <rdfs:label xml:lang="en">Type 1 diabetes associated diabetic nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200010"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100001"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200009"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200010"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200011 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200011">
+        <rdfs:label xml:lang="en">Streptozotocin-induced model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200007"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200010"/>
+        <skos:altLabel rdf:datatype="&xsd;string">STZ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">STZ-induced diabetic nephropathy</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Streptozotocin (STZ) is an analogue of N-acetylglucosamine (GlcNAc). It is readily transported into pancreatic beta-cells by GLUT-2 and selectively inhibits the activity of beta-cell O-GlcNAcase, which is responsible for removing O-GlcNAc from protein. This causes irreversible O-glycosylation of intracellular proteins and results in beta-cell apoptosis. STZ can be used to study diabetic nephropathy in most rodent strains. However the severity of injury is dependent on genetic background. Moreover,
+GLUT-2 is also expressed by renal and hepatic cells. The cytotoxicity of STZ is thus not restricted to pancreatic beta-cells but also affects kidney and liver cells.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">diabetic nephropathy induced by STZ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">diabetic nephropathy induced by streptozotocin</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">STZ-induced diabetic nephropathy</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Streptozotocin (STZ) is an analogue of N-acetylglucosamine (GlcNAc). It is readily transported into pancreatic beta-cells by GLUT-2 and selectively inhibits the activity of beta-cell O-GlcNAcase, which is responsible for removing O-GlcNAc from protein. This causes irreversible O-glycosylation of intracellular proteins and results in beta-cell apoptosis. STZ can be used to study diabetic nephropathy in most rodent strains. However the severity of injury is dependent on genetic background. Moreover,
+GLUT-2 is also expressed by renal and hepatic cells. The cytotoxicity of STZ is thus not restricted to pancreatic beta-cells but also affects kidney and liver cells.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200007"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">diabetic nephropathy induced by streptozotocin</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">STZ</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200010"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">diabetic nephropathy induced by STZ</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200012 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200012">
+        <rdfs:label xml:lang="en">Streptozotocin-induced mouse model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200011"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200012"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200013 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200013">
+        <rdfs:label xml:lang="en">Low dose streptozotocin-induced model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200012"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Multiple low-dose injection of STZ (50-55mg/kg for 5 consecutive days, i.p.). C57BLKS and DBA2/J mouse strains are more susceptible to low-dose STZ-induced diabetic nephropathy compared to C57Bl/6, FVB/N, A/J, BALB/C or Swiss Webster genetic backgrounds.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">low STZ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">low streptozotocin</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">low-dose STZ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">low-dose mouse model of diabetic nephropathy</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">low-dose streptozotocin</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Multiple low-dose injection of STZ (50-55mg/kg for 5 consecutive days, i.p.). C57BLKS and DBA2/J mouse strains are more susceptible to low-dose STZ-induced diabetic nephropathy compared to C57Bl/6, FVB/N, A/J, BALB/C or Swiss Webster genetic backgrounds.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">low STZ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">low-dose STZ</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">low-dose mouse model of diabetic nephropathy</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200012"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">low-dose streptozotocin</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">low streptozotocin</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200014 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200014">
+        <rdfs:label xml:lang="en">High dose streptozotocin-induced model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200012"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Single high-dose injection of STZ (&gt;= 200mg/kg, i.p.) or two-dose regimen (2x100-125mg/kg for 2 consecutive days, i.p.).</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">high STZ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">high streptozotocin</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">high-dose STZ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">high-dose mouse model of diabetic nephropathy</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">high-dose streptozotocin</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">high-dose mouse model of diabetic nephropathy</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">high streptozotocin</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">high-dose streptozotocin</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200012"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Single high-dose injection of STZ (&gt;= 200mg/kg, i.p.) or two-dose regimen (2x100-125mg/kg for 2 consecutive days, i.p.).</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">high STZ</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">high-dose STZ</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200015 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200015">
+        <rdfs:label xml:lang="en">Streptozotocin-induced model of diabetic nephropathy associated with eNOS deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200004"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200011"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Decreased eNOS activity is associated with the development of advanced nephropathy in patients with type 1 and type 2 diabetes.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">STZ-eNOS(-/-)</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">STZ-eNOS(-/-)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200015"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200015"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200015"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Decreased eNOS activity is associated with the development of advanced nephropathy in patients with type 1 and type 2 diabetes.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200015"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200016 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200016">
+        <rdfs:label xml:lang="en">Low dose streptozotocin-induced model of diabetic nephropathy associated with eNOS deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200013"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200015"/>
+        <rdfs:comment rdf:datatype="&xsd;string">This model has been developed in the nephropathy resistant C57Bl/6 background. Compared with diabetic WT mice, low dose-STZ eNOS(-/-) mice develop more severe albuminuria, mesangial expansion, mesangiolysis and focal sclerosis.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">This model has been developed in the nephropathy resistant C57Bl/6 background. Compared with diabetic WT mice, low dose-STZ eNOS(-/-) mice develop more severe albuminuria, mesangial expansion, mesangiolysis and focal sclerosis.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200016"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200013"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200016"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200015"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200016"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200017 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200017">
+        <rdfs:label xml:lang="en">High dose streptozotocin-induced model of diabetic nephropathy associated with eNOS deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200014"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200015"/>
+        <rdfs:comment rdf:datatype="&xsd;string">This model has been developed in the nephropathy resistant C57Bl/6 background. Compared with diabetic WT mice, high dose-STZ eNOS(-/-) mice develop more severe albuminuria, mesangial expansion, mesangiolysis and focal sclerosis. Diabetic knock-out mice also exhibit robust glomerulosclerosis and tubulointerstitial injury, and significant hypertension and mortality.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">This model has been developed in the nephropathy resistant C57Bl/6 background. Compared with diabetic WT mice, high dose-STZ eNOS(-/-) mice develop more severe albuminuria, mesangial expansion, mesangiolysis and focal sclerosis. Diabetic knock-out mice also exhibit robust glomerulosclerosis and tubulointerstitial injury, and significant hypertension and mortality.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200017"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200015"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200017"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200014"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200017"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200018 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200018">
+        <rdfs:label xml:lang="en">Streptozotocin-induced rat model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200011"/>
+        <rdfs:comment rdf:datatype="&xsd;string">STZ-induced diabetic nephropathy is commonly studied in Sprague-Dawley (SD), Wistar-Kyoto (WKY), or spontaneously hypertensive (SHR) rats (SD=55mg/kg, WKY=60mg/kg, SHR=45mg/kg, one injection, i.v.).</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">STZ-induced diabetic nephropathy is commonly studied in Sprague-Dawley (SD), Wistar-Kyoto (WKY), or spontaneously hypertensive (SHR) rats (SD=55mg/kg, WKY=60mg/kg, SHR=45mg/kg, one injection, i.v.).</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200018"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200011"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200018"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200019 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200019">
+        <rdfs:label xml:lang="en">Streptozotocin-induced rat model of diabetic nephropathy associated with uninephrectomy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200006"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200018"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Uninephrectomy is thought to accelerate the progression of renal injury. However, interpretation of this model is complex as it is difficult to dissociate the relative contribution of STZ-induced hyperglycemia and uninephrectomy-induced changes in the development of glomerular lesions.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Uninephrectomy is thought to accelerate the progression of renal injury. However, interpretation of this model is complex as it is difficult to dissociate the relative contribution of STZ-induced hyperglycemia and uninephrectomy-induced changes in the development of glomerular lesions.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200019"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200006"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200019"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200018"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200019"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200020 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200020">
+        <rdfs:label xml:lang="en">Akita model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200002"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200010"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Autosomal dominant mutation, generally studied in heterozygous state. Lead to impaired beta cell function and survival due to insulin misfolding and endoplasmic reticular stress. DBA2/J mouse strain is more susceptible to Akita mutation compared to C57Bl/6 and FVB/N genetic backgrounds.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">Ins2(Akita/+)</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Ins2Akita</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ins2Akita</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200020"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ins2(Akita/+)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200020"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200010"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200020"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Autosomal dominant mutation, generally studied in heterozygous state. Lead to impaired beta cell function and survival due to insulin misfolding and endoplasmic reticular stress. DBA2/J mouse strain is more susceptible to Akita mutation compared to C57Bl/6 and FVB/N genetic backgrounds.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200020"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200002"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200020"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200021 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200021">
+        <rdfs:label xml:lang="en">Akita model of diabetic nephropathy associated with eNOS deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200004"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200020"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Decreased eNOS activity is associated with the development of advanced nephropathy in patients with type 1 and type 2 diabetes.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">eNOS(-/-)Ins2(Akita/+)</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200021"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200020"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200021"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Decreased eNOS activity is associated with the development of advanced nephropathy in patients with type 1 and type 2 diabetes.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200021"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">eNOS(-/-)Ins2(Akita/+)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200021"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200022 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200022">
+        <rdfs:label xml:lang="en">FVB-OVE26</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200003"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200010"/>
+        <skos:altLabel rdf:datatype="&xsd;string">CaMTg</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">FVB(Cg)-Tg(Ins2-CALM1)26Ove Tg(Cryaa-TAg)1Ove/PneJ</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">OVE26</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Transgenic model of early-onset type 1 diabetes. Generated in FVB/N background. The calmodulin gene is under the control of a rat insulin 2 promoter. Calmodulin is thus specifically overexpressed in the beta cells and exerts beta-cell toxicity. CaMTg mice develop persistent proteinuria, tubulointerstital fibrosis, glomerualr basement thickening and a considerable increase in the glomerular and mesangial areas. Moreover, these mice exhibit most of the pathologic hallmarks of human diabetic nephropathy, that is mesangiolysis, Kimmelstiel-Wilson-like nodular lesions, exudative lesions and arteriolar hyalinosis.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">FVB(Cg)-Tg(Ins2-CALM1)26Ove Tg(Cryaa-TAg)1Ove/PneJ</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200022"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200003"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200022"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">CaMTg</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200022"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200010"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200022"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">OVE26</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200022"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Transgenic model of early-onset type 1 diabetes. Generated in FVB/N background. The calmodulin gene is under the control of a rat insulin 2 promoter. Calmodulin is thus specifically overexpressed in the beta cells and exerts beta-cell toxicity. CaMTg mice develop persistent proteinuria, tubulointerstital fibrosis, glomerualr basement thickening and a considerable increase in the glomerular and mesangial areas. Moreover, these mice exhibit most of the pathologic hallmarks of human diabetic nephropathy, that is mesangiolysis, Kimmelstiel-Wilson-like nodular lesions, exudative lesions and arteriolar hyalinosis.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200022"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200023 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200023">
+        <rdfs:label xml:lang="en">NOD model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200002"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200010"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Non Obese Diabetic mice</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">The susceptibility to type 1 diabetes in NOD mice is polygenic and strongly depends on environment. Diabetes develop as a result of leukocytic infiltrate of pancreatic islet (auto-immune disease). However, the onset of diabetes is very variable, as the incidence of spontaneous diabetes in the NOD mouse is 60-80% in females, but dramatically lower in males (20-30%). Female NOD mice exhibit increased glomerular area, glomerulosclerosis and glomerular basal membrane thickness at 50 weeks of age.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200002"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200023"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200010"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200023"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">The susceptibility to type 1 diabetes in NOD mice is polygenic and strongly depends on environment. Diabetes develop as a result of leukocytic infiltrate of pancreatic islet (auto-immune disease). However, the onset of diabetes is very variable, as the incidence of spontaneous diabetes in the NOD mouse is 60-80% in females, but dramatically lower in males (20-30%). Female NOD mice exhibit increased glomerular area, glomerulosclerosis and glomerular basal membrane thickness at 50 weeks of age.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200023"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Non Obese Diabetic mice</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200023"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200024 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200024">
+        <rdfs:label xml:lang="en">Type 2 diabetes associated diabetic nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200009"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200024"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200024"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100002"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200025 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200025">
+        <rdfs:label xml:lang="en">db/db model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200002"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200024"/>
+        <rdfs:comment rdf:datatype="&xsd;string">C57BKS(db/db) is one of the best model of nephropathy associated with type 2 diabetes. The db/db mouse, resulting from a mutation in the leptin receptor gene (Lpr), develops hyperglycaemia, glomerular hypertrophy, and sclerosis with age but is not associated with lesions of tubulointerstitial fibrosis. Mutations of the leptin receptor are however a rare cause of type 2 diabetes in humans, and the direct relevance to the human condition may thus be argued.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">Lpr(db/db)</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">db/db</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">db/db</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200025"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">C57BKS(db/db) is one of the best model of nephropathy associated with type 2 diabetes. The db/db mouse, resulting from a mutation in the leptin receptor gene (Lpr), develops hyperglycaemia, glomerular hypertrophy, and sclerosis with age but is not associated with lesions of tubulointerstitial fibrosis. Mutations of the leptin receptor are however a rare cause of type 2 diabetes in humans, and the direct relevance to the human condition may thus be argued.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200025"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200002"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200025"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Lpr(db/db)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200025"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200024"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200025"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200026 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200026">
+        <rdfs:label xml:lang="en">db/db model of diabetic nephropathy associated wih eNOS deletion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200004"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200025"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Decreased eNOS activity is associated with the development of advanced nephropathy in patients with type 1 and type 2 diabetes. This model has been developed in C57BLKS background. Compared to eNOS(+/+) mice, eNOS(-/-) mice exhibit greater mesangial expansion, glomerular basement membrane thickening, arteriolar hyalinosis, mesangiolysis, nodular glomerulosclerosis and tubulointerstitial injury.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">Lpr(db/db)eNOS(-/-)</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Lpr(db/db)eNOS(-/-)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200026"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200025"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200026"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200026"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Decreased eNOS activity is associated with the development of advanced nephropathy in patients with type 1 and type 2 diabetes. This model has been developed in C57BLKS background. Compared to eNOS(+/+) mice, eNOS(-/-) mice exhibit greater mesangial expansion, glomerular basement membrane thickening, arteriolar hyalinosis, mesangiolysis, nodular glomerulosclerosis and tubulointerstitial injury.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200026"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200027 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200027">
+        <rdfs:label xml:lang="en">Zucker model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200002"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200024"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Lpr(fa/fa)</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Obese Zucker Diabetic Fatty</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Obese Zucker Diabetic Fatty (ZDF) rats are homozygotes for a mutation in the leptin receptor gene (Lpr), thus reducing the affinity of the leptin receptor for its ligand. Male obese ZDF rats are glucose-intolerant, transiently hyperinsulinemic, hyperlipidemic, hyperleptinemic and develop mild nephropathy. Female obese ZDF rats do not express the diabetic phenotype only on diabetogenic diet, not on regular chow diet. Lean ZDF rats, whether male or female do not express the diabetic phenotype.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">ZDF</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">fa/fa</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">ZDF</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Obese Zucker Diabetic Fatty</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200002"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Lpr(fa/fa)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Obese Zucker Diabetic Fatty (ZDF) rats are homozygotes for a mutation in the leptin receptor gene (Lpr), thus reducing the affinity of the leptin receptor for its ligand. Male obese ZDF rats are glucose-intolerant, transiently hyperinsulinemic, hyperlipidemic, hyperleptinemic and develop mild nephropathy. Female obese ZDF rats do not express the diabetic phenotype only on diabetogenic diet, not on regular chow diet. Lean ZDF rats, whether male or female do not express the diabetic phenotype.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200024"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">fa/fa</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200027"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200028 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200028">
+        <rdfs:label xml:lang="en">NONcNZO10/LtJ model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200001"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200024"/>
+        <skos:altLabel rdf:datatype="&xsd;string">NONcNZO10/LtJ</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">NONcNZO10/LtJ is an inbred congenic strain derived from cross between the NonObese Nondiabetic (NON/LtJ) strain and the New Zealand Obese (NZO/HlLt) strain. These mice have been developed as a polygenic model of obesity-induced type 2 diabetes and metabolic syndrome. The obesity is more moderate than in the db/db strain.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200028"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200024"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200028"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">NONcNZO10/LtJ</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200028"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">NONcNZO10/LtJ is an inbred congenic strain derived from cross between the NonObese Nondiabetic (NON/LtJ) strain and the New Zealand Obese (NZO/HlLt) strain. These mice have been developed as a polygenic model of obesity-induced type 2 diabetes and metabolic syndrome. The obesity is more moderate than in the db/db strain.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200028"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200029 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200029">
+        <rdfs:label xml:lang="en">KKAy model of diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200003"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200024"/>
+        <skos:altLabel rdf:datatype="&xsd;string">KK-Ay</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">The KKAy mouse is a congenital strain established by transduction of yellow obese gene (Ay) into the KK mice. The inbred KK mice develops type 2 diabetes with moderate obesity and hyperglycemia. The introduction of the Ay allele causes massive obesity and overt type 2 diabetes with elevated plasma glucose and insulin resistance. Furthermore, KKAy mice exhibits albuminuria, mesangial expansion, glomerulosclerosis and glomerular capillary basement thickening.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">The KKAy mouse is a congenital strain established by transduction of yellow obese gene (Ay) into the KK mice. The inbred KK mice develops type 2 diabetes with moderate obesity and hyperglycemia. The introduction of the Ay allele causes massive obesity and overt type 2 diabetes with elevated plasma glucose and insulin resistance. Furthermore, KKAy mice exhibits albuminuria, mesangial expansion, glomerulosclerosis and glomerular capillary basement thickening.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200029"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200003"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200029"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">KK-Ay</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200029"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200024"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200029"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200030 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200030">
+        <rdfs:label xml:lang="en">Ureteral obstruction model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_5199"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel rdf:datatype="&xsd;string">Obstructive nephropathy</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Obstructive nephropathy</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_5199"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200031 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200031">
+        <rdfs:label xml:lang="en">Ureteral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200030"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200031"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200032 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200032">
+        <rdfs:label xml:lang="en">Partial ureteral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200031"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200031"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200032"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200033 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200033">
+        <rdfs:label xml:lang="en">Partial unilateral ureteral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200032"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200032"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200033"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200034 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200034">
+        <rdfs:label xml:lang="en">Partial bilateral ureteral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200032"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200032"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200034"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200035 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200035">
+        <rdfs:label xml:lang="en">Complete ureteral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200031"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200031"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200035"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200036 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200036">
+        <rdfs:label xml:lang="en">Complete unilateral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200035"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200035"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200036"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200037 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200037">
+        <rdfs:label xml:lang="en">Complete bilateral obstruction model, Adult</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200035"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200035"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200037"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200038 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200038">
+        <rdfs:label xml:lang="en">Ureteral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200030"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200038"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200039 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200039">
+        <rdfs:label xml:lang="en">Partial ureteral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200038"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200038"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200039"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200040 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200040">
+        <rdfs:label xml:lang="en">Partial unilateral ureteral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200039"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200039"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200040"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200041 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200041">
+        <rdfs:label xml:lang="en">Partial bilateral ureteral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200039"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200039"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200041"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200042 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200042">
+        <rdfs:label xml:lang="en">Complete ureteral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200038"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200038"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200042"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200043 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200043">
+        <rdfs:label xml:lang="en">Complete unilateral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200042"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200042"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200043"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200044 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200044">
+        <rdfs:label xml:lang="en">Complete bilateral obstruction model, Fetal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200042"/>
+        <rdfs:comment rdf:datatype="&xsd;string">l</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200042"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200044"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">l</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200044"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200045 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200045">
+        <rdfs:label xml:lang="en">Ureteral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200030"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200030"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200045"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200046 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200046">
+        <rdfs:label xml:lang="en">Partial ureteral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200045"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200045"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200046"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200047 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200047">
+        <rdfs:label xml:lang="en">Partial unilateral ureteral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200046"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Neonatal PUUO Model</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Neonatal Partial UUO Model</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Neonatal Partial UUO Model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200047"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Neonatal PUUO Model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200047"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200046"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200047"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200048 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200048">
+        <rdfs:label xml:lang="en">Partial bilateral ureteral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200046"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200046"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200048"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200049 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200049">
+        <rdfs:label xml:lang="en">Complete ureteral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200045"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200045"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200049"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200050 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200050">
+        <rdfs:label xml:lang="en">Complete unilateral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200049"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200049"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200050"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200051 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200051">
+        <rdfs:label xml:lang="en">Complete bilateral obstruction model, Neonatal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200049"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200049"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200051"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200052 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200052">
+        <rdfs:label xml:lang="en">Chronic renal failure model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_784"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200052"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_784"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200052"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200053 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200053">
+        <rdfs:label xml:lang="en">Sub-total nephrectomy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200052"/>
+        <skos:altLabel rdf:datatype="&xsd;string">5/6 nephrectomy model</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Rather that mimicking a renal disease, sub-total nephrectomy models the progressive renal failure associated to loss of renal mass. The rate of progression to renal failure is closely related to the amount of tissue excised. It is thus necessary to weight and calculate the proportion of excised tissue to limit inter-individual variations.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200052"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200053"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">5/6 nephrectomy model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200053"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Rather that mimicking a renal disease, sub-total nephrectomy models the progressive renal failure associated to loss of renal mass. The rate of progression to renal failure is closely related to the amount of tissue excised. It is thus necessary to weight and calculate the proportion of excised tissue to limit inter-individual variations.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200053"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200054 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200054">
+        <rdfs:label xml:lang="en">Sub-total nephrectomy ablation model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200006"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200053"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Ablation model</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">In this model, one kidney is removed (uninephrectomy) and blood flow is interrupted to the poles of the remaining kidney (ligation of polar branches of the renal artery). This ligation model is associated with severe hypertension.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200053"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200054"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">In this model, one kidney is removed (uninephrectomy) and blood flow is interrupted to the poles of the remaining kidney (ligation of polar branches of the renal artery). This ligation model is associated with severe hypertension.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200054"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200006"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200054"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ablation model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200054"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200055 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200055">
+        <rdfs:label xml:lang="en">Sub-total nephrectomy ligation model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200053"/>
+        <rdfs:comment rdf:datatype="&xsd;string">In this model, one kidney is removed and the 2 poles of the remaining kidney are removed 1-2 weeks later.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">Infarction model</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Infarction model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200055"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">In this model, one kidney is removed and the 2 poles of the remaining kidney are removed 1-2 weeks later.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200055"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200053"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200055"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200056 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200056">
+        <rdfs:label xml:lang="en">Acute renal failure model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_3021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel rdf:datatype="&xsd;string">AKI: Acute kidney injury</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">ARF</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Acute kidney injury model</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Acute renal failure</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Acute kidney injury model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200056"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">AKI: Acute kidney injury</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200056"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Acute renal failure</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200056"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200056"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">ARF</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200056"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200057 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200057">
+        <rdfs:label xml:lang="en">Ischemia/reperfusion injury model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200056"/>
+        <skos:altLabel rdf:datatype="&xsd;string">ATN</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Acute tubular necrosis model</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">IARF</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Ischemia/reperfusion is the major cause of AKI in native and transplant kidneys. The consequences of ischemia/reperfusion are proportional to the period of ischemia, and depends on animal species and age.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">ischemic acute renal failure</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">renal ischemia/reperfusion injury</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ischemia/reperfusion is the major cause of AKI in native and transplant kidneys. The consequences of ischemia/reperfusion are proportional to the period of ischemia, and depends on animal species and age.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">renal ischemia/reperfusion injury</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Acute tubular necrosis model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200056"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">ATN</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">ischemic acute renal failure</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">IARF</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200058 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200058">
+        <rdfs:label xml:lang="en">Bilateral ischemia/reperfusion injury model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200057"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Bilateral clamping of the renal pedicele. Simulates AKI induced by severe acute hypotension.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Bilateral clamping of the renal pedicele. Simulates AKI induced by severe acute hypotension.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200058"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200058"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200059 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200059">
+        <rdfs:label xml:lang="en">Unilateral ischemia/reperfusion injury model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200057"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Unilateral clamping of the renal pedicele. Allows comparison with contralateral kidney and increases survival rate.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Unilateral clamping of the renal pedicele. Allows comparison with contralateral kidney and increases survival rate.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200059"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200059"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200060 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200060">
+        <rdfs:label xml:lang="en">Unilateral ischemia/reperfusion injury model associated with uninephrectomy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200006"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200057"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Uninephrectomy is followed by unilateral clamping of the pedicele of the remaining kidney. More closely mimicks the situation occuring in renal transplantation.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200057"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200060"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200006"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200060"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Uninephrectomy is followed by unilateral clamping of the pedicele of the remaining kidney. More closely mimicks the situation occuring in renal transplantation.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200060"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200061 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200061">
+        <rdfs:label xml:lang="en">Nephrotoxic model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string">Kidneys are particularly prone to toxic damages, due to their ability to concentrate and metabolize chemicals. Molecules can be toxic for either renal vasculature, glomerular cells, and tubular epithelium. Most often, in animal models mimicking the nephrotoxic insults, single exposure results in acute renal disease with resolution and regeneration whereas repeat exposures induces progressive renal disease.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Kidneys are particularly prone to toxic damages, due to their ability to concentrate and metabolize chemicals. Molecules can be toxic for either renal vasculature, glomerular cells, and tubular epithelium. Most often, in animal models mimicking the nephrotoxic insults, single exposure results in acute renal disease with resolution and regeneration whereas repeat exposures induces progressive renal disease.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200061"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200007"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200061"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200061"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100003"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200062 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200062">
+        <rdfs:label xml:lang="en">Podocyte-toxicity model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200061"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200061"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200062"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200063 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200063">
+        <rdfs:label xml:lang="en">Focal segmental glomerulosclerosis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1312"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel rdf:datatype="&xsd;string">FSGS</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">FSGS</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200063"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200063"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1312"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200063"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200064 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200064">
+        <rdfs:label xml:lang="en">Primary focal segmental glomerulosclerosis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200062"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200063"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Toxic model of focal segmental glomerulosclerosis</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Toxic models induce direct podocyte injury including podocyte oxidative stress, foot process effacement and glomerulosclerosis.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200063"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200064"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Toxic model of focal segmental glomerulosclerosis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200064"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Toxic models induce direct podocyte injury including podocyte oxidative stress, foot process effacement and glomerulosclerosis.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200064"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200062"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200064"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200065 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200065">
+        <rdfs:label xml:lang="en">Secondary focal segmental glomerulosclerosis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200006"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200063"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Post adaptative focal segmental glomerulosclerosis</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Renal ablation models induce glomerular hypertension (elevated glomerular capillary pressures and flow rates) as a consequence of the reduced number of functioning nephrons or other glomerular stress. This adaptative response is considered as the cause of secondary podocyte injury</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200006"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200065"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200063"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200065"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Renal ablation models induce glomerular hypertension (elevated glomerular capillary pressures and flow rates) as a consequence of the reduced number of functioning nephrons or other glomerular stress. This adaptative response is considered as the cause of secondary podocyte injury</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200065"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Post adaptative focal segmental glomerulosclerosis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200065"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200066 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200066">
+        <rdfs:label xml:lang="en">Nephrotic syndrome model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200066"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1184"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200062"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200066"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200067 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200067">
+        <rdfs:label xml:lang="en">Adriamycin-induced nephrotic syndrome model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200063"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200066"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Adriamycin is an antibiotic with antineoplasic properties (DNA replication inhibition). Its use is associated with nephrotic syndrome in clinic. The principal site of action of adriamycin is the podocyte (foot process fusion).</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">Adriamycin nephropathy</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Doxorubicin induced nephropathy</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Adriamycin is an antibiotic with antineoplasic properties (DNA replication inhibition). Its use is associated with nephrotic syndrome in clinic. The principal site of action of adriamycin is the podocyte (foot process fusion).</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200067"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Doxorubicin induced nephropathy</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200067"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200066"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200067"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Adriamycin nephropathy</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200067"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200063"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200067"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200068 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200068">
+        <rdfs:label xml:lang="en">Puromycin aminonucleoside-induced nephrotic syndrome model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200066"/>
+        <rdfs:comment rdf:datatype="&xsd;string">PAN is an antibiotic with antineoplasic properties. Its use is associated with nephrotic syndrome in clinic. The principal site of action of PAN is the podocyte (foot process fusion). Mice are not susceptible to PAN.</rdfs:comment>
+        <skos:altLabel rdf:datatype="&xsd;string">PAN nephrosis</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">PAN nephrotic syndrome</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200066"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200068"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">PAN is an antibiotic with antineoplasic properties. Its use is associated with nephrotic syndrome in clinic. The principal site of action of PAN is the podocyte (foot process fusion). Mice are not susceptible to PAN.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200068"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">PAN nephrosis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200068"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">PAN nephrotic syndrome</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200068"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200069 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200069">
+        <rdfs:label xml:lang="en">Tubular-toxicity model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200061"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200061"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200069"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200070 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200070">
+        <rdfs:label xml:lang="en">Cisplatin-induced nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200069"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Cisplatin is an anti-tumor agent. It is absorbed and accumulated in the S3 segment of the proximal tubule, inducing apoptosis and necrosis of epithelial cells. Cisplatin-induced nephropathy is now considered to be more a generic model than a model mimicking the clinical situation as its use declines in clinic.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200069"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200070"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Cisplatin is an anti-tumor agent. It is absorbed and accumulated in the S3 segment of the proximal tubule, inducing apoptosis and necrosis of epithelial cells. Cisplatin-induced nephropathy is now considered to be more a generic model than a model mimicking the clinical situation as its use declines in clinic.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200070"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200071 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200071">
+        <rdfs:label xml:lang="en">Mercuric chloride-induced nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200069"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200069"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200071"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200072 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200072">
+        <rdfs:label xml:lang="en">Gentamicin-induced nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200069"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Gentaminin is a aminoglycoside antibiotic. Proximal tubule concentrate aminoglycoside, inducing mitochondrial and lysosomal dysfunction. This model is highly relevant clinically. It displays myeloid bodies in proximal cells as it is observed in humans.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Gentaminin is a aminoglycoside antibiotic. Proximal tubule concentrate aminoglycoside, inducing mitochondrial and lysosomal dysfunction. This model is highly relevant clinically. It displays myeloid bodies in proximal cells as it is observed in humans.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200072"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200069"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200072"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200073 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200073">
+        <rdfs:label xml:lang="en">Folic acid-induced nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200069"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200069"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200073"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200074 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200074">
+        <rdfs:label xml:lang="en">Ciclosporin-induced nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200069"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200118"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200069"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200074"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200075 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200075">
+        <rdfs:label xml:lang="en">Immune-mediated model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200007"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200007"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200075"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200076 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200076">
+        <rdfs:label xml:lang="en">Glomerulonephritis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2921"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200076"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2921"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200076"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200077 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200077">
+        <rdfs:label xml:lang="en">Mesangioproliferative glomerulonephritis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_4783"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel rdf:datatype="&xsd;string">Mesangial proliferative glomerulonephritis model</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">MsPGN</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200077"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_4783"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200076"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200077"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">MsPGN</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200077"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Mesangial proliferative glomerulonephritis model</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200077"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200078 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200078">
+        <rdfs:label xml:lang="en">Thy-1 nephritis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200075"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200077"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2986"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_4783"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1312"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel rdf:datatype="&xsd;string">Anti-Thy 1.1 glomerulonephritis</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Anti-Thy 1.1 nephritis</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Anti-Thy-1 glomerulonephritis</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Anti-Thy-1 nephritis</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Thy-1 (THYmocyte differentiation antigen 1), also known as CD90, is a 25-37 kDa cell surface protein originally found to be expressed on thymocytes.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anti-Thy 1.1 nephritis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anti-Thy 1.1 glomerulonephritis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anti-Thy-1 nephritis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_4783"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1312"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Thy-1 (THYmocyte differentiation antigen 1), also known as CD90, is a 25-37 kDa cell surface protein originally found to be expressed on thymocytes.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100004"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200075"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anti-Thy-1 glomerulonephritis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2986"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200077"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200079 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200079">
+        <rdfs:label xml:lang="en">Thy-1 nephritis rat model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200078"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Rats express the Thy-1.1 antigen on mesangial cells. To induce Thy-1 nephritis, rats are injected with a rabbit anti-thymocyte serum (ATS) or a mouse anti-Thy 1 mAB (e.g. OX-7 or 1-22-3). Thy-1 nephritis is characterized by initial mesangolysis, followed by mesangial proliferation and mesangial matrix expansion, similar to that seen in human variants of mesangial proliferative glomerulonephritis. However, in the rat model w/o uninephrectomy, mesangial proliferation is transient and spontaneous regeneration occurs (reversible model).</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Rats express the Thy-1.1 antigen on mesangial cells. To induce Thy-1 nephritis, rats are injected with a rabbit anti-thymocyte serum (ATS) or a mouse anti-Thy 1 mAB (e.g. OX-7 or 1-22-3). Thy-1 nephritis is characterized by initial mesangolysis, followed by mesangial proliferation and mesangial matrix expansion, similar to that seen in human variants of mesangial proliferative glomerulonephritis. However, in the rat model w/o uninephrectomy, mesangial proliferation is transient and spontaneous regeneration occurs (reversible model).</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200079"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200079"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200080 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200080">
+        <rdfs:label xml:lang="en">Thy-1 nephritis rat model associated with uninephrectomy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200078"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Rats express the Thy-1.1 antigen on mesangial cells. To induce Thy-1 nephritis, rats are injected with a rabbit anti-thymocyte serum (ATS) or a mouse anti-Thy 1 mAB (e.g. OX-7 or 1-22-3). Thy-1 nephritis is characterized by initial mesangolysis, followed by mesangial proliferation and mesangial matrix expansion, similar to that seen in human variants of mesangial proliferative glomerulonephritis. In the rat model associated with uninephrectomy, progressive development of glomerulosclerosis occurs (irreversible model), perharps mimicking more closely what happen during mesangial proliferative glomerulonephritis in humans.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200080"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Rats express the Thy-1.1 antigen on mesangial cells. To induce Thy-1 nephritis, rats are injected with a rabbit anti-thymocyte serum (ATS) or a mouse anti-Thy 1 mAB (e.g. OX-7 or 1-22-3). Thy-1 nephritis is characterized by initial mesangolysis, followed by mesangial proliferation and mesangial matrix expansion, similar to that seen in human variants of mesangial proliferative glomerulonephritis. In the rat model associated with uninephrectomy, progressive development of glomerulosclerosis occurs (irreversible model), perharps mimicking more closely what happen during mesangial proliferative glomerulonephritis in humans.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200080"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200080"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200081 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200081">
+        <rdfs:label xml:lang="en">Thy-1 nephritis mouse model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200003"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200078"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Normal mice do not express the Thy-1.1 antigen in the kidney. For this reason, transgenic mice that ectopically express a mice-human chimeric Thy-1.1 antigen on podocytes have been developed. These mice slowly and spontaneously develop albuminuria and focal segmental glomerulosclerosis (FSGS). Injection of mAb directed against the Thy-1.1 antigen or against aminopeptidase (APA, an enzyme expressed in proximal tubule epithelial cells and podocytes), induces an acute albuminuria within 1 day and accelerate the development of FSGS lesions within 3 wk. FSGS lesions in this mouse model mimicks the collapsing variant of human FSGS.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200078"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200081"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Normal mice do not express the Thy-1.1 antigen in the kidney. For this reason, transgenic mice that ectopically express a mice-human chimeric Thy-1.1 antigen on podocytes have been developed. These mice slowly and spontaneously develop albuminuria and focal segmental glomerulosclerosis (FSGS). Injection of mAb directed against the Thy-1.1 antigen or against aminopeptidase (APA, an enzyme expressed in proximal tubule epithelial cells and podocytes), induces an acute albuminuria within 1 day and accelerate the development of FSGS lesions within 3 wk. FSGS lesions in this mouse model mimicks the collapsing variant of human FSGS.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200081"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200003"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200081"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200082 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200082">
+        <rdfs:label xml:lang="en">Anti-GBM nephritis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200076"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200082"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200076"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200082"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200083 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200083">
+        <rdfs:label xml:lang="en">Habu snake venom model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200007"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200077"/>
+        <skos:altLabel rdf:datatype="&xsd;string">HSV glomerulonephritis</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Intravenous injection of HSV provokes acute focal mesangial proliferative glomerulonephritis in rodents.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">HSV glomerulonephritis</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200083"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200007"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200083"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200077"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200083"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Intravenous injection of HSV provokes acute focal mesangial proliferative glomerulonephritis in rodents.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200083"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200084 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200084">
+        <rdfs:label xml:lang="en">Membranoproliferative glomerulonephritis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200076"/>
+        <skos:altLabel rdf:datatype="&xsd;string">MPGN</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">MPGN is characterized by glomerular hypercellularity, mesangial matrix expansion, thickening of the peripheral capillary walls, progressive loss of renal function eventually resulting in end-stage renal disease. Clinically, MPGN is characterized by proteinuria (up to nephrotic range), hypertension, and haematuria.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">MPGN</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200084"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">MPGN is characterized by glomerular hypercellularity, mesangial matrix expansion, thickening of the peripheral capillary walls, progressive loss of renal function eventually resulting in end-stage renal disease. Clinically, MPGN is characterized by proteinuria (up to nephrotic range), hypertension, and haematuria.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200084"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200076"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200084"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200085 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200085">
+        <rdfs:label xml:lang="en">CFH-deficiency model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200084"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Cfh(-/-)</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Complement Factor H deficiency</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200084"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200085"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Complement Factor H deficiency</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200085"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Cfh(-/-)</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200085"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200086 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200086">
+        <rdfs:label xml:lang="en">CFH-deficiency mouse model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200004"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200085"/>
+        <skos:altLabel rdf:datatype="&xsd;string">CFH-deficient mouse</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">MPGN II/DDD (dense deposit disease) similarities: mesangial hypercellularity, mesangial matrix expansion, capillary wall thickening and electron-dense deposits (C3 and C9) in the subendothelial space but not in the GBM. Cfh(-/-) mice also develop proteinuria, haematuria and die from renal failure.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200086"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200085"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200086"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">CFH-deficient mouse</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200086"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">MPGN II/DDD (dense deposit disease) similarities: mesangial hypercellularity, mesangial matrix expansion, capillary wall thickening and electron-dense deposits (C3 and C9) in the subendothelial space but not in the GBM. Cfh(-/-) mice also develop proteinuria, haematuria and die from renal failure.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200086"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200087 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200087">
+        <rdfs:label xml:lang="en">CFH-deficiency piglet model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200004"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200085"/>
+        <skos:altLabel rdf:datatype="&xsd;string">CFH-deficient piglet</skos:altLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">MPGN II/DDD (dense deposit disease) phenotype: glomerular hypercellularity, mesangial matrix expansion, electron-dense material and C3 deposits within GBM. Animals die from renal failure.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">MPGN II/DDD (dense deposit disease) phenotype: glomerular hypercellularity, mesangial matrix expansion, electron-dense material and C3 deposits within GBM. Animals die from renal failure.</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200087"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;comment"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">CFH-deficient piglet</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200087"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200087"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200085"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200087"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200088 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200088">
+        <rdfs:label>Genetic in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200089 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200089">
+        <rdfs:label>Agent-induced in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200090 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200090">
+        <rdfs:label>Ciclosporine A in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200109"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200091 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200091">
+        <rdfs:label>High glucose in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200092 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200092">
+        <rdfs:label>Calcium oxalate monohydrate in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+        <skos:altLabel>Calcium oxalate crystals in vitro model</skos:altLabel>
+        <skos:altLabel>COM in vitro model</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200093 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200093">
+        <rdfs:label>Renal transplant rejection model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200098"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200094 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200094">
+        <rdfs:label>Interstitial fibrosis and tubular atrophy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200093"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel>IF/TA model</skos:altLabel>
+        <skos:altLabel>Chronic allograft nephropathy model</skos:altLabel>
+        <skos:altLabel>CAN model</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200095 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200095">
+        <rdfs:label>Acute renal allograft rejection model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200093"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200096 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200096">
+        <rdfs:label>Other animal model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200097 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200097">
+        <rdfs:label>Other in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200098 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200098">
+        <rdfs:label>Renal transplantation model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200099 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200099">
+        <rdfs:label>Allogenic transplantation model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200093"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200100 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200100">
+        <rdfs:label>Syngenic transplantation model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200098"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200101 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200101">
+        <rdfs:label>Interstitial fibrosis and tubular atrophy model (allogenic transplantation)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200094"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200099"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200102 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200102">
+        <rdfs:label>Acute renal allograft rejection model (allogenic transplantation)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200095"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200099"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200103 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200103">
+        <rdfs:label xml:lang="en">Hypoxia in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000006"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000006"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200103"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200104 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200104">
+        <rdfs:label xml:lang="en">Oxidative stress in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000006"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000006"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200104"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200105 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200105">
+        <rdfs:label xml:lang="en">H2O2 in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200104"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200104"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200105"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200105"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200106 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200106">
+        <rdfs:label xml:lang="en">PDGF in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200106"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200107 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200107">
+        <rdfs:label xml:lang="en">CTGF in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200107"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200108 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200108">
+        <rdfs:label xml:lang="en">TGFbeta in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200108"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200109 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200109">
+        <rdfs:label xml:lang="en">Immunosuppressor in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200109"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200110 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200110">
+        <rdfs:label xml:lang="en">Sirolimus in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200109"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200109"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200110"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200111 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200111">
+        <rdfs:label xml:lang="en">Tacrolimus in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200109"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200109"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200111"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200112 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200112">
+        <rdfs:label xml:lang="en">Vasopressine in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200112"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200113 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200113">
+        <rdfs:label xml:lang="en">Nephrotoxicant in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200113"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200114 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200114">
+        <rdfs:label xml:lang="en">Cisplatin in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200113"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200113"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200114"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200115 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200115">
+        <rdfs:label xml:lang="en">Gentamicin in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200113"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200113"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200115"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200116 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200116">
+        <rdfs:label xml:lang="en">LPS induced in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200089"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200116"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200117 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200117">
+        <rdfs:label xml:lang="en">LPS induced model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200007"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200007"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200117"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200118 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200118">
+        <rdfs:label xml:lang="en">Immunosuppressor-induced nephropathy model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200061"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200061"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200118"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200119 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200119">
+        <rdfs:label xml:lang="en">Cystic kidney disease model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2975"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200119"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200119"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_2975"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200120 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200120">
+        <rdfs:label xml:lang="en">Polycystic kidney disease model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200119"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0200119"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200120"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0200120"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100012"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200121 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200121">
+        <rdfs:label xml:lang="en">AGE in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0200122 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0200122">
+        <rdfs:label xml:lang="en">Lupus nephritis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_0100020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Lupus nephritis is an inflammation of the kidney caused by systemic lupus erythematosus (SLE), a disease of the immune system. About half of cases of SLE demonstrate signs of lupus nephritis at one time or another. Renal-specific signs include proteinuria (100%), nephrotic syndrome (55%), granular casts (30%), red cell casts (10%), microhematuria (80%), macrohematuria (2%), reduced renal function (60%), RPGN (30%), ARF (2%), hypertension (35%), hyperkalemia (15%) and tubular abnormalities (70%).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/public/kupo/KUPO_0200200 -->
+
+    <owl:Class rdf:about="&kupo2;KUPO_0200200">
+        <rdfs:label>Aristolochic acid-nephrotoxic model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_3052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Aristolochic acids are a family of carcinogenic, mutagenic, and nephrotoxic compounds commonly found in the Aristolochiaceae family of plants, including Aristolochia and Asarum (wild ginger), which are commonly used in Chinese herbal medicine. Aristolochic acids are hypothesized to be causative agents in Balkan endemic nephropathy; and a related—possibly identical—condition known as &quot;Chinese herbs nephropathy&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/public/kupo/KUPO_0200201 -->
+
+    <owl:Class rdf:about="&kupo2;KUPO_0200201">
+        <rdfs:label>Develomental cigarette smoke-nephrotoxic model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200061"/>
+        <rdfs:comment>Foetal exposure to cigarette smoke during pregancy (developmental cigarette smoke exposure (CSE)) results in intrauterine growth retardation with a predisposition to obesity and cardiovascular disease at maturity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/public/kupo/KUPO_0200202 -->
+
+    <owl:Class rdf:about="&kupo2;KUPO_0200202">
+        <rdfs:label>Diffuse mesangial sclerosis model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200077"/>
+        <rdfs:comment>The term diffuse mesangial sclerosis (DMS) indicates a characteristic glomerular histological alteration that occurs in childhood nephrotic syndrome and is associated with genetic alterations. Histopathological findings consist in glomeruli with mesangial expansion by increased mesangial matrix, with capillary walls that may be normal initially, but with hypertrophy and hyperplasia of podocytes. By advancing the process (usually in months or a few years), there is progressively greater mesangial expansion, capillary lumens are lost and the capillary walls are difficult to see clearly. In the terminal stages there is glomerular sclerosis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/public/kupo/KUPO_0200203 -->
+
+    <owl:Class rdf:about="&kupo2;KUPO_0200203">
+        <rdfs:label>Denys-drash syndrome model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo2;KUPO_0200202"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_3764"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A rare congenital syndrome caused by mutations in the WT1 gene. Causes kidney failure before age 3, abnormal development of the sexual organs, and, in most cases, Wilms tumor (a type of kidney cancer). Children with Denys-Drash syndrome are also at high risk of some other types of cancer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/public/kupo/KUPO_0200204 -->
+
+    <owl:Class rdf:about="&kupo2;KUPO_0200204">
+        <rdfs:label>HIV-induced in vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0200089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&kupo;mimics"/>
+                <owl:someValuesFrom rdf:resource="&disease_ontology;DOID_1312"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>HIV-associated nephropathy (HIVAN) refers to kidney disease developing in association with HIV infection. The most common, or &quot;classical&quot;, type of HIV-associated nephropathy is a collapsing focal segmental glomerulosclerosis (FSGS), though other forms of kidney disease may also occur with HIV. HIVAN may be caused by direct infection of the renal cells with the HIV-1 virus, with resulting renal damage through the viral gene products. It could also be caused by changes in the release of cytokines during HIV infection.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

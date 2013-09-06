@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>populous model</comment>
+<entry key="entity.idlabel">false</entry>
+<entry key="entity.usebaseuri">false</entry>
+<entry key="startrow">1</entry>
+<entry key="entity.namelabel">true</entry>
+<entry key="bindingcol.7">?anatomyParent</entry>
+<entry key="bindingcol.5">?label</entry>
+<entry key="bindingcol.4">?process</entry>
+<entry key="pattern.name.7d35d681-867c-4e32-8a96-eef85e3caaea">cell_subclass_p</entry>
+<entry key="bindingcol.2">?parent</entry>
+<entry key="entity.end">100000</entry>
+<entry key="bindingcol.1">?anatomyPart</entry>
+<entry key="bindingcol.0">?cell</entry>
+<entry key="entity.prefix">KUPO_</entry>
+<entry key="pattern.name.17c3f7ae-af37-4578-b121-5b59e8e3084e">anatomy_p</entry>
+<entry key="pattern.value.2cb92734-3ef8-4232-bc61-f77b4b1a5083">?cell:CLASS,
+?process:CLASS, 
+?participatesRestriction:CLASS = participates_in some ?process,
+?participatesIntersection:CLASS = createIntersection(?participatesRestriction.VALUES)
+BEGIN
+ADD ?cell subClassOf ?participatesIntersection
+END;
+</entry>
+<entry key="pattern.name.12da677a-a700-4ce3-93c3-33dea7c9fae4">anatomy_parent_p</entry>
+<entry key="pattern.value.47975b05-a54f-47bc-bf12-b774f86653dd">?anatomyPart:CLASS
+BEGIN
+ADD ?anatomyPart subClassOf KUPO_0000003
+END;</entry>
+<entry key="sourceontology.physical">file:/Users/simon/Documents/e-lico/svn/trunk/software/ontologies/kupo/kupo-cells.owl</entry>
+<entry key="pattern.name.4295d849-fbb9-42cb-bdaf-52d9da714317">cell_synonym_p</entry>
+<entry key="sheet">0</entry>
+<entry key="entity.labeluri">http://www.w3.org/2000/01/rdf-schema#label</entry>
+<entry key="entity.suffix"/>
+<entry key="endrow">151</entry>
+<entry key="sourceontology.iri">http://www.e-lico.eu/public/kupo/kupo-cells.owl</entry>
+<entry key="entity.seperator">/</entry>
+<entry key="pattern.id.5">47975b05-a54f-47bc-bf12-b774f86653dd</entry>
+<entry key="pattern.id.4">4295d849-fbb9-42cb-bdaf-52d9da714317</entry>
+<entry key="pattern.id.3">17c3f7ae-af37-4578-b121-5b59e8e3084e</entry>
+<entry key="pattern.id.2">12da677a-a700-4ce3-93c3-33dea7c9fae4</entry>
+<entry key="entity.autogeneratefragment">true</entry>
+<entry key="pattern.id.1">2cb92734-3ef8-4232-bc61-f77b4b1a5083</entry>
+<entry key="pattern.id.0">7d35d681-867c-4e32-8a96-eef85e3caaea</entry>
+<entry key="importedontology.iri5">http://purl.org/obo/owl/cell</entry>
+<entry key="importedontology.iri4">http://www.e-lico.eu/public/kupo/kupo-core.owl</entry>
+<entry key="sourceontology.isnew">true</entry>
+<entry key="importedontology.iri3">http://purl.org/obo/owl/biological_process</entry>
+<entry key="importedontology.iri2">http://purl.org/obo/owl/relationship</entry>
+<entry key="importedontology.iri1">http://purl.org/obo/owl/adult_mouse_anatomy</entry>
+<entry key="entity.digit">7</entry>
+<entry key="importedontology.iri0">http://www.e-lico.eu/public/kupo/kupo-relations.owl</entry>
+<entry key="pattern.value.7d35d681-867c-4e32-8a96-eef85e3caaea">?cell:CLASS,
+?parent:CLASS
+BEGIN
+ADD ?cell subClassOf ?parent,
+ADD ?cell subClassOf KUPO_0000002
+END;
+</entry>
+<entry key="entity.autoidclass">uk.ac.manchester.cs.owl.semspreadsheets.patterns.oppl.entity.IterativeAutoIDGenerator</entry>
+<entry key="pattern.name.2cb92734-3ef8-4232-bc61-f77b4b1a5083">participates_p</entry>
+<entry key="pattern.name.47975b05-a54f-47bc-bf12-b774f86653dd">mouse_parent_p</entry>
+<entry key="pattern.value.17c3f7ae-af37-4578-b121-5b59e8e3084e">?cell:CLASS, 
+?anatomyPart:CLASS, 
+?partOfRestriction:CLASS = part_of some ?anatomyPart,
+?anatomyIntersection:CLASS = createIntersection(?partOfRestriction.VALUES) 
+BEGIN
+ADD ?cell equivalentTo CL_0000000 and ?anatomyIntersection
+END;
+</entry>
+<entry key="entity.baseuri">http://www.e-lico.eu/data/kupo</entry>
+<entry key="pattern.value.12da677a-a700-4ce3-93c3-33dea7c9fae4">?anatomyPart:CLASS,
+?anatomyParent:CLASS
+BEGIN
+ADD ?anatomyPart subClassOf part_of some ?anatomyParent
+END;
+</entry>
+<entry key="entity.start">1001</entry>
+<entry key="pattern.value.4295d849-fbb9-42cb-bdaf-52d9da714317">?cell:CLASS,
+?label:CONSTANT
+BEGIN
+ADD ?cell.IRI altLabel "?label"
+END;
+</entry>
+<entry key="column5">7</entry>
+<entry key="column4">5</entry>
+<entry key="column3">4</entry>
+<entry key="entity.labellang">en</entry>
+<entry key="column2">2</entry>
+<entry key="column1">1</entry>
+<entry key="column0">0</entry>
+</properties>

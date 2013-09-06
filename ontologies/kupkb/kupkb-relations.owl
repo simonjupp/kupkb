@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY core "http://purl.uniprot.org/core/" >
+    <!ENTITY bio2rdf "http://bio2rdf.org/ns/bio2rdf:" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY uniprot "http://bio2rdf.org/ns/uniprot:" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY taxonomy "http://bio2rdf.org/ns/taxonomy:" >
+    <!ENTITY kupkb "http://www.e-lico.eu/data/kupkb/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.e-lico.eu/public/kupkb/kupkb-relations.owl#"
+     xml:base="http://www.e-lico.eu/public/kupkb/kupkb-relations.owl"
+     xmlns:kupkb="http://www.e-lico.eu/data/kupkb/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:core="http://purl.uniprot.org/core/"
+     xmlns:bio2rdf="http://bio2rdf.org/ns/bio2rdf:"
+     xmlns:taxonomy="http://bio2rdf.org/ns/taxonomy:"
+     xmlns:uniprot="http://bio2rdf.org/ns/uniprot:">
+    <owl:Ontology rdf:about="http://www.e-lico.eu/public/kupkb/kupkb-relations.owl">
+        <owl:versionIRI rdf:resource="http://www.e-lico.eu/public/kupkb/kupkb-relations.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bio2rdf.org/ns/bio2rdf:xTaxonomy -->
+
+    <owl:ObjectProperty rdf:about="&bio2rdf;xTaxonomy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>taxonomy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bio2rdf.org/ns/uniprot:xProtein -->
+
+    <owl:ObjectProperty rdf:about="&uniprot;xProtein">
+        <rdfs:label>protein</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000316">
+        <rdfs:label>has_role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.uniprot.org/core/classifiedWith -->
+
+    <owl:ObjectProperty rdf:about="&core;classifiedWith">
+        <rdfs:label>classifiedWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/analysisOf -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;analysisOf">
+        <owl:inverseOf rdf:resource="&kupkb;hasAnalysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/annotatedWith -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;annotatedWith">
+        <rdfs:label>annotatedWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/bioCondition -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;bioCondition"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/bioMaterial -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;bioMaterial"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/encodes -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;encodes"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasAnalysis -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasAnalysis"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasCondition -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasCondition"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasDatabaseRef -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasDatabaseRef">
+        <owl:inverseOf rdf:resource="&kupkb;isReferenced"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasEntry -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasEntry"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasHomolog -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasHomolog">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasMember -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasMember">
+        <owl:inverseOf rdf:resource="&kupkb;memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasPreAnalyticalTechnique -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasPreAnalyticalTechnique">
+        <rdfs:label>has preanalytical technique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasQuality -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasQuality">
+        <rdfs:label>hasQuality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/hasRegulation -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasRegulation"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/isReferenced -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;isReferenced"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/memberOf -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;memberOf"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/producedBy -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;producedBy"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/produces -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;produces">
+        <owl:inverseOf rdf:resource="&kupkb;producedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/representsBiologicalEntity -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;representsBiologicalEntity"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/targets -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;targets"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/usedBy -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;usedBy"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/uses -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;uses">
+        <owl:inverseOf rdf:resource="&kupkb;usedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="&ro;part_of">
+        <rdfs:label>part_of</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

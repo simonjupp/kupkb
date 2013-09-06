@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>populous model</comment>
+<entry key="importedontology.iri0">http://www.e-lico.eu/public/kupo/kupo-relations.owl</entry>
+<entry key="entity.start">100001</entry>
+<entry key="entity.baseuri">http://www.e-lico.eu/data/kupo</entry>
+<entry key="pattern.name.147b79bd-7fac-4f7a-a605-db403929c1c3">subclass_p</entry>
+<entry key="pattern.id.1">c9ba8167-3e18-4f89-8712-851de0b18dc6</entry>
+<entry key="sheet">0</entry>
+<entry key="entity.idlabel">false</entry>
+<entry key="pattern.id.0">147b79bd-7fac-4f7a-a605-db403929c1c3</entry>
+<entry key="pattern.value.147b79bd-7fac-4f7a-a605-db403929c1c3">?disease:CLASS,
+?parent:CLASS
+BEGIN
+ADD ?disease subClassOf ?parent
+END;</entry>
+<entry key="entity.suffix"/>
+<entry key="entity.end">200000</entry>
+<entry key="entity.autoidclass">uk.ac.manchester.cs.owl.semspreadsheets.patterns.oppl.entity.IterativeAutoIDGenerator</entry>
+<entry key="endrow">16</entry>
+<entry key="column2">2</entry>
+<entry key="entity.usebaseuri">false</entry>
+<entry key="column1">1</entry>
+<entry key="sourceontology.iri">http://www.e-lico.eu/public/kupo/kupo-disease.owl</entry>
+<entry key="entity.labellang">en</entry>
+<entry key="column0">0</entry>
+<entry key="entity.digit">7</entry>
+<entry key="pattern.name.c9ba8167-3e18-4f89-8712-851de0b18dc6">label_p</entry>
+<entry key="bindingcol.2">?label</entry>
+<entry key="bindingcol.1">?parent</entry>
+<entry key="pattern.value.c9ba8167-3e18-4f89-8712-851de0b18dc6">?disease:CLASS,
+?label:CONSTANT
+BEGIN
+ADD ?disease.IRI label "?label"
+END;</entry>
+<entry key="bindingcol.0">?disease</entry>
+<entry key="entity.seperator">/</entry>
+<entry key="startrow">1</entry>
+<entry key="entity.autogeneratefragment">true</entry>
+<entry key="sourceontology.isnew">true</entry>
+<entry key="sourceontology.physical">file:/Users/simon/Documents/e-lico/svn/trunk/software/ontologies/kupo/kupo-disease.owl</entry>
+<entry key="entity.labeluri">http://www.w3.org/2000/01/rdf-schema#label</entry>
+<entry key="entity.prefix">KUPO_</entry>
+<entry key="importedontology.iri2">http://www.e-lico.eu/public/kupo/kupo-core.owl</entry>
+<entry key="entity.namelabel">true</entry>
+<entry key="importedontology.iri1">http://www.e-lico.eu/public/kupo/urinary-disease-module.owl</entry>
+</properties>

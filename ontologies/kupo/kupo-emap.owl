@@ -1,0 +1,556 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY MA "http://purl.org/obo/owl/MA#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY kupo "http://www.kupkb.org/data/kupo/" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.kupkb.org/public/kupo/kupo-emap.owl#"
+     xml:base="http://www.kupkb.org/public/kupo/kupo-emap.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:kupo="http://www.kupkb.org/data/kupo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:MA="http://purl.org/obo/owl/MA#">
+    <owl:Ontology rdf:about="http://www.kupkb.org/public/kupo/kupo-emap.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#part_of -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;part_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0000372 -->
+
+    <owl:Class rdf:about="&MA;MA_0000372"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0000373 -->
+
+    <owl:Class rdf:about="&MA;MA_0000373"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0000707 -->
+
+    <owl:Class rdf:about="&MA;MA_0000707"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0000710 -->
+
+    <owl:Class rdf:about="&MA;MA_0000710"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0000712 -->
+
+    <owl:Class rdf:about="&MA;MA_0000712"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0001682 -->
+
+    <owl:Class rdf:about="&MA;MA_0001682"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002035 -->
+
+    <owl:Class rdf:about="&MA;MA_0002035"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002210 -->
+
+    <owl:Class rdf:about="&MA;MA_0002210"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002586 -->
+
+    <owl:Class rdf:about="&MA;MA_0002586"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002587 -->
+
+    <owl:Class rdf:about="&MA;MA_0002587">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_1001005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002590 -->
+
+    <owl:Class rdf:about="&MA;MA_0002590">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_1001005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002608 -->
+
+    <owl:Class rdf:about="&MA;MA_0002608"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002620 -->
+
+    <owl:Class rdf:about="&MA;MA_0002620"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002621 -->
+
+    <owl:Class rdf:about="&MA;MA_0002621"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002627 -->
+
+    <owl:Class rdf:about="&MA;MA_0002627">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_1001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002630 -->
+
+    <owl:Class rdf:about="&MA;MA_0002630">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                <owl:someValuesFrom rdf:resource="&kupo;KUPO_1001004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002635 -->
+
+    <owl:Class rdf:about="&MA;MA_0002635"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/MA#MA_0002882 -->
+
+    <owl:Class rdf:about="&MA;MA_0002882"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000002 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000002"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000003 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000003"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0001102 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0001102"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001001 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001001">
+        <rdfs:label>endothelial layer of renal artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0000707"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002035"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001002 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001002">
+        <rdfs:label>endothelial layer of renal vein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0000712"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002210"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001004 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001004">
+        <rdfs:label>loop of Henle, outer medullary portion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001005 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001005">
+        <rdfs:label>renal cortical capillary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001006 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001006">
+        <rdfs:label>renal cortical nerves</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0002635"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0000372"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001007 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001007">
+        <rdfs:label>renal cortical vasculature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0001682"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0000372"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001008 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001008">
+        <rdfs:label>renal medullary arterial system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0002035"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0000373"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001009 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001009">
+        <rdfs:label>renal medullary capillary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0002586"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0000373"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001010 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001010">
+        <rdfs:label>renal medullary vasculature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0001682"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0000373"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001011 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001011">
+        <rdfs:label>smooth muscle layer of renal artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0000710"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002035"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001012 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001012">
+        <rdfs:label>smooth muscle layer of renal vein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0000710"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002210"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001013 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001013">
+        <rdfs:label>renal cortical lymphatics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&MA;MA_0002882"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0000372"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001014 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001014">
+        <rdfs:label>kidney cortex interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&kupo;KUPO_0001102"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002608"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001015 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001015">
+        <rdfs:label>kidney cortex peritubular interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_1001014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001016 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001016">
+        <rdfs:label>kidney outer medulla interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&kupo;KUPO_0001102"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002621"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001017 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001017">
+        <rdfs:label>kidney outer medulla peritubular interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_1001016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001018 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001018">
+        <rdfs:label>kidney inner medulla interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&kupo;KUPO_0001102"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&OBO_REL;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&MA;MA_0002620"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001019 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001019">
+        <rdfs:label>kidney inner medulla  peritubular interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_1001018"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001020 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001020">
+        <rdfs:label>kidney inner medulla periarterial interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_1001018"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001021 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001021">
+        <rdfs:label>kidney outer medulla periarterial interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_1001016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_1001022 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_1001022">
+        <rdfs:label>kidney cortex periarterial interstitial fibroblast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_1001014"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1469) http://owlapi.sourceforge.net -->
+

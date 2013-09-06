@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>populous model</comment>
+<entry key="pattern.value.0f4ba061-d42b-40c0-be69-98346f33d2f1">?model:CLASS,
+?synonym:CONSTANT
+BEGIN
+ADD ?model.IRI altLabel "?synonym"
+END;</entry>
+<entry key="entity.idlabel">false</entry>
+<entry key="entity.usebaseuri">false</entry>
+<entry key="startrow">1</entry>
+<entry key="entity.namelabel">true</entry>
+<entry key="bindingcol.8">?mimics</entry>
+<entry key="bindingcol.5">?comment</entry>
+<entry key="bindingcol.4">?synonym</entry>
+<entry key="bindingcol.3">?parent</entry>
+<entry key="entity.end">300000</entry>
+<entry key="bindingcol.0">?model</entry>
+<entry key="entity.prefix">KUPO_</entry>
+<entry key="pattern.name.6b7c3455-a6eb-4ce4-a1b9-f6ab14ed5493">mimics</entry>
+<entry key="sourceontology.physical">file:/Users/simon/Documents/e-lico/svn/trunk/software/ontologies/kupo/kupo-models.owl</entry>
+<entry key="pattern.name.ca7ccde7-36f4-4061-8154-88f95f7f4b34">comment</entry>
+<entry key="sheet">0</entry>
+<entry key="entity.labeluri">http://www.w3.org/2000/01/rdf-schema#label</entry>
+<entry key="entity.suffix"/>
+<entry key="endrow">88</entry>
+<entry key="pattern.value.9b517546-90ca-4010-8761-b38392357cbc">?model:CLASS,
+?parent:CLASS
+BEGIN
+ADD ?model subClassOf ?parent
+END;</entry>
+<entry key="sourceontology.iri">http://www.e-lico.eu/public/kupo/kupo-models.owl</entry>
+<entry key="entity.seperator">/</entry>
+<entry key="pattern.name.0f4ba061-d42b-40c0-be69-98346f33d2f1">synonym</entry>
+<entry key="pattern.id.3">9b517546-90ca-4010-8761-b38392357cbc</entry>
+<entry key="pattern.id.2">6b7c3455-a6eb-4ce4-a1b9-f6ab14ed5493</entry>
+<entry key="entity.autogeneratefragment">true</entry>
+<entry key="pattern.id.1">0f4ba061-d42b-40c0-be69-98346f33d2f1</entry>
+<entry key="pattern.id.0">ca7ccde7-36f4-4061-8154-88f95f7f4b34</entry>
+<entry key="sourceontology.isnew">true</entry>
+<entry key="importedontology.iri2">http://www.e-lico.eu/public/kupo/kupo-core.owl</entry>
+<entry key="importedontology.iri1">http://www.e-lico.eu/public/kupo/urinary-disease-module.owl</entry>
+<entry key="entity.digit">7</entry>
+<entry key="importedontology.iri0">http://www.e-lico.eu/public/kupo/kupo-relations.owl</entry>
+<entry key="entity.autoidclass">uk.ac.manchester.cs.owl.semspreadsheets.patterns.oppl.entity.IterativeAutoIDGenerator</entry>
+<entry key="pattern.value.6b7c3455-a6eb-4ce4-a1b9-f6ab14ed5493">?model:CLASS,
+?mimics:CLASS
+BEGIN
+ADD ?model subClassOf mimics some ?mimics
+END;
+</entry>
+<entry key="entity.baseuri">http://www.e-lico.eu/data/kupo</entry>
+<entry key="pattern.value.ca7ccde7-36f4-4061-8154-88f95f7f4b34">?model:CLASS,
+?comment:CONSTANT
+BEGIN
+ADD ?model.IRI comment "?comment"
+END;
+</entry>
+<entry key="entity.start">200001</entry>
+<entry key="pattern.name.9b517546-90ca-4010-8761-b38392357cbc">parent_p</entry>
+<entry key="column4">8</entry>
+<entry key="column3">5</entry>
+<entry key="entity.labellang">en</entry>
+<entry key="column2">4</entry>
+<entry key="column1">3</entry>
+<entry key="column0">0</entry>
+</properties>

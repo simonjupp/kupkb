@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY patterns "http://www.co-ode.org/patterns#" >
+    <!ENTITY kupo "http://www.kupkb.org/data/kupo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY disease_ontology "http://purl.org/obo/owlapi/disease_ontology#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.kupkb.org/public/kupo/kupo-disease.owl#"
+     xml:base="http://www.kupkb.org/public/kupo/kupo-disease.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:disease_ontology="http://purl.org/obo/owlapi/disease_ontology#"
+     xmlns:kupo="http://www.kupkb.org/data/kupo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.kupkb.org/public/kupo/kupo-disease.owl">
+        <owl:imports rdf:resource="http://www.kupkb.org/public/kupo/urinary-disease-module.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&patterns;createdBy"/>
+    <owl:AnnotationProperty rdf:about="&skos;altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_1074 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_1074"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_1184 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_1184">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_557"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_1184"/>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_557"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_1312 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_1312">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2921"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_1312"/>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2921"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_18 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_18">
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000007"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_18"/>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000007"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2370 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2370">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_557"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_2370"/>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_557"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2921 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2921">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_557"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_2921"/>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_557"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2975 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2975"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2985 -->
+
+    <rdf:Description rdf:about="&disease_ontology;DOID_2985">
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100007"/>
+        <oboInOwl:synonym>Interstitial fibrosis and tubular atrophy</oboInOwl:synonym>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_2986 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_2986">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2921"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2921"/>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_2986"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_3021 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_3021">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_1074"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_1074"/>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_3021"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_3764 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_3764">
+        <rdfs:label>Denys-Drash syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_630"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_4783 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_4783">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2921"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2921"/>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_4783"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_5199 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_5199">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_18"/>
+        <skos:altLabel rdf:datatype="&xsd;string">UPJ syndrome</skos:altLabel>
+        <skos:altLabel rdf:datatype="&xsd;string">Ureteropelvic junction obstructive syndrome</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_18"/>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_5199"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">UPJ syndrome</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_5199"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ureteropelvic junction obstructive syndrome</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_5199"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_557 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_557"/>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_630 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_630">
+        <rdfs:label>genetic disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owlapi/disease_ontology#DOID_784 -->
+
+    <owl:Class rdf:about="&disease_ontology;DOID_784">
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_1074"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_1074"/>
+        <owl:annotatedSource rdf:resource="&disease_ontology;DOID_784"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000007 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000007"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100001 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100001">
+        <rdfs:label xml:lang="en">type 1 diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2370"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2370"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100001"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100002 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100002">
+        <rdfs:label xml:lang="en">type 2 diabetic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2370"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2370"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100002"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100003 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100003">
+        <rdfs:label xml:lang="en">toxic nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_557"/>
+        <skos:altLabel rdf:datatype="&xsd;string">drug-induced nephropathy</skos:altLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">drug-induced nephropathy</owl:annotatedTarget>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100003"/>
+        <owl:annotatedProperty rdf:resource="&skos;altLabel"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_557"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100003"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100004 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100004">
+        <rdfs:label xml:lang="en">Henoch-Schönlein purpura glomerulonephritis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2921"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2921"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100004"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100005 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100005">
+        <rdfs:label>Acute renal allograft rejection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100006 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100006">
+        <rdfs:label>Interstitial fibrosis and tubular atrophy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2985"/>
+        <skos:altLabel>CAN</skos:altLabel>
+        <skos:altLabel>Chronic allograft nephropathy</skos:altLabel>
+        <skos:altLabel>IF/TA</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100007 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100007">
+        <rdfs:label>Renal transplant rejection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_557"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100008 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100008">
+        <rdfs:label>Other disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100009 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100009">
+        <rdfs:label xml:lang="en">HNF1beta/TCF2 nephropathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2975"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2975"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100009"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100010 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100010">
+        <rdfs:label xml:lang="en">Orofaciodigital syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2975"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2975"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100010"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100011 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100011">
+        <rdfs:label xml:lang="en">Medullary cystic kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2975"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2975"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100011"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100012 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100012">
+        <rdfs:label xml:lang="en">Polycystic kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&disease_ontology;DOID_2975"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&disease_ontology;DOID_2975"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100012"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100013 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100013">
+        <rdfs:label xml:lang="en">Autosomic dominant polycystic kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100012"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0100012"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100013"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100014 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100014">
+        <rdfs:label xml:lang="en">PKD1 Autosomic dominant kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100013"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0100013"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100014"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100015 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100015">
+        <rdfs:label xml:lang="en">PKD2 Autosomic dominant kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100013"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0100013"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100015"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100016 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100016">
+        <rdfs:label xml:lang="en">Autosomic recessive polycystic kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100012"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0100012"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100016"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100017 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100017">
+        <rdfs:label xml:lang="en">PKHD1 Autosomic recessive polycystic kidney disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0100016"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0100016"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0100017"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0100018 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0100018">
+        <rdfs:label xml:lang="en">Renal transplantation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000007"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

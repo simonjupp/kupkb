@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>populous model</comment>
+<entry key="entity.start">1</entry>
+<entry key="entity.baseuri">http://www.e-lico.eu/data/kupo</entry>
+<entry key="sheet">0</entry>
+<entry key="entity.idlabel">false</entry>
+<entry key="pattern.id.0">4870e7c8-c011-4a62-a360-81658b99400c</entry>
+<entry key="entity.suffix"/>
+<entry key="entity.end">1000</entry>
+<entry key="entity.autoidclass">uk.ac.manchester.cs.owl.semspreadsheets.patterns.oppl.entity.IterativeAutoIDGenerator</entry>
+<entry key="pattern.name.4870e7c8-c011-4a62-a360-81658b99400c">subclass_pattern</entry>
+<entry key="endrow">7</entry>
+<entry key="entity.usebaseuri">false</entry>
+<entry key="pattern.value.4870e7c8-c011-4a62-a360-81658b99400c">?sub:CLASS,
+?sup:CLASS
+BEGIN
+ADD ?sub subClassOf ?sup
+END;</entry>
+<entry key="column1">1</entry>
+<entry key="sourceontology.iri">http://www.e-lico.eu/public/kupo/kupo-core.owl</entry>
+<entry key="entity.labellang">en</entry>
+<entry key="column0">0</entry>
+<entry key="entity.digit">7</entry>
+<entry key="bindingcol.1">?sup</entry>
+<entry key="bindingcol.0">?sub</entry>
+<entry key="entity.seperator">/</entry>
+<entry key="startrow">0</entry>
+<entry key="entity.autogeneratefragment">true</entry>
+<entry key="sourceontology.isnew">true</entry>
+<entry key="sourceontology.physical">file:/Users/simon/Documents/e-lico/svn/trunk/software/ontologies/kupo/kupo-core.owl</entry>
+<entry key="entity.labeluri">http://www.w3.org/2000/01/rdf-schema#label</entry>
+<entry key="entity.prefix">KUPO_</entry>
+<entry key="entity.namelabel">true</entry>
+</properties>

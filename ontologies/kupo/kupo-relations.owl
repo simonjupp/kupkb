@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY efo "http://www.ebi.ac.uk/efo/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY core "http://purl.uniprot.org/core/" >
+    <!ENTITY bio2rdf "http://bio2rdf.org/ns/bio2rdf:" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY uniprot "http://bio2rdf.org/ns/uniprot:" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY taxonomy "http://bio2rdf.org/ns/taxonomy:" >
+    <!ENTITY kupo "http://www.kupkb.org/data/kupo/" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY kupkb "http://www.kupkb.org/data/kupkb/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY dctype "http://purl.org/dc/dcmitype/Image" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.kupkb.org/public/kupo/kupo-relations.owl#"
+     xml:base="http://www.kupkb.org/public/kupo/kupo-relations.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:kupkb="http://www.kupkb.org/data/kupkb/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:kupo="http://www.kupkb.org/data/kupo/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/Image"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:core="http://purl.uniprot.org/core/"
+     xmlns:bio2rdf="http://bio2rdf.org/ns/bio2rdf:"
+     xmlns:taxonomy="http://bio2rdf.org/ns/taxonomy:"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:uniprot="http://bio2rdf.org/ns/uniprot:">
+    <owl:Ontology rdf:about="http://www.kupkb.org/public/kupo/kupo-relations.owl">
+        <owl:versionIRI rdf:resource="http://www.kupkb.org/public/kupo/kupo-relations.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&skos;altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://bio2rdf.org/ns/bio2rdf:xTaxonomy -->
+
+    <owl:ObjectProperty rdf:about="&bio2rdf;xTaxonomy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>taxonomy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bio2rdf.org/ns/uniprot:xProtein -->
+
+    <owl:ObjectProperty rdf:about="&uniprot;xProtein">
+        <rdfs:label>protein</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.uniprot.org/core/classifiedWith -->
+
+    <owl:ObjectProperty rdf:about="&core;classifiedWith">
+        <rdfs:label>classifiedWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/analysisOf -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;analysisOf">
+        <owl:inverseOf rdf:resource="&kupkb;hasAnalysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/annotatedWith -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;annotatedWith">
+        <rdfs:label>annotatedWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/bioCondition -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;bioCondition"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/bioMaterial -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;bioMaterial"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/encodes -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;encodes"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasAnalysis -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasAnalysis"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasAnnotationRole -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasAnnotationRole">
+        <rdfs:label>hasAnnotationRole</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasCondition -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasCondition"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasDatabaseRef -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasDatabaseRef">
+        <owl:inverseOf rdf:resource="&kupkb;isReferenced"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasDisease -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasDisease">
+        <rdfs:label>hasDisease</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasEntry -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasEntry"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasExpression -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasExpression">
+        <rdfs:label>hasExpression</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasHomolog -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasHomolog">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasMember -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasMember">
+        <owl:inverseOf rdf:resource="&kupkb;memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasPreAnalyticalTechnique -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasPreAnalyticalTechnique">
+        <rdfs:label>has preanalytical technique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasQuality -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasQuality">
+        <rdfs:label>hasQuality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/hasRegulation -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;hasRegulation"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/isReferenced -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;isReferenced"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/memberOf -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;memberOf"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/producedBy -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;producedBy"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/produces -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;produces">
+        <owl:inverseOf rdf:resource="&kupkb;producedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/representsBiologicalEntity -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;representsBiologicalEntity"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/targets -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;targets"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/usedBy -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;usedBy"/>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/uses -->
+
+    <owl:ObjectProperty rdf:about="&kupkb;uses">
+        <owl:inverseOf rdf:resource="&kupkb;usedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/mimics -->
+
+    <owl:ObjectProperty rdf:about="&kupo;mimics">
+        <rdfs:label>mimics</rdfs:label>
+        <rdfs:comment>Relation between a animal model and the disease it mimics</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="&ro;part_of">
+        <rdfs:label>part_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/foldChange -->
+
+    <owl:DatatypeProperty rdf:about="&kupkb;foldChange">
+        <rdfs:label>foldChange</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupkb/pValue -->
+
+    <owl:DatatypeProperty rdf:about="&kupkb;pValue">
+        <rdfs:label>pValue</rdfs:label>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

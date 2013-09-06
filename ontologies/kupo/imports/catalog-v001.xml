@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1377795614090" name="duplicate:http://purl.org/obo/owl/" uri="cto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1377795614090" name="duplicate:http://purl.org/obo/owl/" uri="go_bp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1377795614090" name="duplicate:http://purl.org/obo/owl/" uri="mao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1377795614090" name="http://purl.org/obo/owl/quality" uri="PATO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1377795614090" name="http://www.ebi.ac.uk/efo/" uri="EFO_inferred_v144.owl"/>
+    </group>
+</catalog>

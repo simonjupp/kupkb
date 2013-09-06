@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>populous model</comment>
+<entry key="importedontology.iri0">http://purl.org/obo/owl/quality</entry>
+<entry key="entity.start">300001</entry>
+<entry key="entity.baseuri">http://www.e-lico.eu/data/kupo</entry>
+<entry key="sheet">0</entry>
+<entry key="entity.idlabel">false</entry>
+<entry key="pattern.name.16bfac44-f510-4506-b025-388a803616a4">subclass_p</entry>
+<entry key="pattern.id.0">16bfac44-f510-4506-b025-388a803616a4</entry>
+<entry key="entity.suffix"/>
+<entry key="entity.end">400000</entry>
+<entry key="pattern.value.16bfac44-f510-4506-b025-388a803616a4">?a:CLASS,
+?b:CLASS
+BEGIN
+ADD 
+?a subClassOf ?b
+END;</entry>
+<entry key="entity.autoidclass">uk.ac.manchester.cs.owl.semspreadsheets.patterns.oppl.entity.IterativeAutoIDGenerator</entry>
+<entry key="endrow">35</entry>
+<entry key="entity.usebaseuri">false</entry>
+<entry key="column1">1</entry>
+<entry key="sourceontology.iri">http://www.e-lico.eu/public/kupo/kupo-experiments.owl</entry>
+<entry key="entity.labellang">en</entry>
+<entry key="column0">0</entry>
+<entry key="entity.digit">7</entry>
+<entry key="bindingcol.1">?b</entry>
+<entry key="bindingcol.0">?a</entry>
+<entry key="entity.seperator">/</entry>
+<entry key="startrow">1</entry>
+<entry key="entity.autogeneratefragment">true</entry>
+<entry key="sourceontology.isnew">true</entry>
+<entry key="sourceontology.physical">file:/Users/simon/Documents/e-lico/svn/trunk/software/ontologies/kupo/kupo-experiments.owl</entry>
+<entry key="entity.labeluri">http://www.w3.org/2000/01/rdf-schema#label</entry>
+<entry key="entity.prefix">KUPO_</entry>
+<entry key="importedontology.iri3">http://www.e-lico.eu/public/kupo/ncbi-slim.owl</entry>
+<entry key="importedontology.iri2">http://www.e-lico.eu/public/kupo/kupo-core.owl</entry>
+<entry key="entity.namelabel">true</entry>
+<entry key="importedontology.iri1">http://www.ebi.ac.uk/efo/</entry>
+</properties>

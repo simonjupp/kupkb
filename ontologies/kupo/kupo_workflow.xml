@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>populous model</comment>
+<entry key="entity.idlabel">false</entry>
+<entry key="entity.usebaseuri">false</entry>
+<entry key="startrow">1</entry>
+<entry key="entity.namelabel">true</entry>
+<entry key="bindingcol.4">?process</entry>
+<entry key="bindingcol.1">?anatomyPart</entry>
+<entry key="entity.end">-1</entry>
+<entry key="bindingcol.0">?cell</entry>
+<entry key="entity.prefix">KUPO_</entry>
+<entry key="pattern.value.03bc3785-c21b-4367-80c5-00f0c1dddf98">?cell:CLASS, 
+?anatomyPart:CLASS, 
+?partOfRestriction:CLASS = part_of some ?anatomyPart,
+?anatomyIntersection:CLASS = createIntersection(?partOfRestriction.VALUES),
+?cellIntersection:CLASS = CL_0000000 and ?anatomyIntersection
+BEGIN
+ADD ?cell equivalentTo ?cellIntersection
+END;
+</entry>
+<entry key="pattern.value.2cb92734-3ef8-4232-bc61-f77b4b1a5083">?cell:CLASS,
+?process:CLASS, 
+?participatesRestriction:CLASS = participates_in some ?process,
+?participatesIntersection:CLASS = createIntersection(?participatesRestriction.VALUES)
+BEGIN
+ADD ?cell subClassOf ?participatesIntersection
+END;
+</entry>
+<entry key="pattern.name.2e52cbe1-9912-4d10-9189-9953b531f263">Pattern_1294411206486</entry>
+<entry key="sourceontology.physical">file:/Users/simon/Documents/e-lico/svn/trunk/software/ontologies/kupo/kupo_generated_070111.owl</entry>
+<entry key="sheet">0</entry>
+<entry key="entity.labeluri">http://www.w3.org/2000/01/rdf-schema#label</entry>
+<entry key="entity.suffix"/>
+<entry key="endrow">151</entry>
+<entry key="sourceontology.iri">http://www.e-lico.eu/public/kupo/kupo.owl</entry>
+<entry key="entity.seperator">/</entry>
+<entry key="entity.autogeneratefragment">true</entry>
+<entry key="pattern.id.0">2cb92734-3ef8-4232-bc61-f77b4b1a5083</entry>
+<entry key="sourceontology.isnew">true</entry>
+<entry key="importedontology.iri3">http://purl.org/obo/owl/cell</entry>
+<entry key="importedontology.iri2">http://purl.org/obo/owl/biological_process</entry>
+<entry key="importedontology.iri1">http://purl.org/obo/owl/relationship</entry>
+<entry key="entity.digit">5</entry>
+<entry key="importedontology.iri0">http://purl.org/obo/owl/adult_mouse_anatomy</entry>
+<entry key="pattern.name.03bc3785-c21b-4367-80c5-00f0c1dddf98">Pattern_1294411222123</entry>
+<entry key="entity.autoidclass">uk.ac.manchester.cs.owl.semspreadsheets.patterns.oppl.entity.IterativeAutoIDGenerator</entry>
+<entry key="pattern.name.2cb92734-3ef8-4232-bc61-f77b4b1a5083">Pattern_1294411666634</entry>
+<entry key="entity.baseuri">http://www.e-lico.eu/data/kupo</entry>
+<entry key="pattern.value.2e52cbe1-9912-4d10-9189-9953b531f263">?cell:CLASS
+BEGIN
+ADD ?cell subClassOf CL_0000000
+END;
+</entry>
+<entry key="entity.start">1</entry>
+<entry key="entity.labellang">en</entry>
+<entry key="column2">4</entry>
+<entry key="column1">1</entry>
+<entry key="column0">0</entry>
+</properties>

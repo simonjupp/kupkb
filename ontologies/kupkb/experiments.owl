@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY v2 "http://www.e-lico.eu/data/kupkb/v2/" >
+    <!ENTITY v22 "http://www.e-lico.eu/data/kupkb/v2/2" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY LC-MS "http://www.e-lico.eu/data/kupkb/v2/LC-MS/" >
+    <!ENTITY experiment "http://www.e-lico.eu/data/kupkb/experiment/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.e-lico.eu/data/kupkb/experiment/"
+     xml:base="http://www.e-lico.eu/data/kupkb/experiment/"
+     xmlns:LC-MS="&v2;LC-MS/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:experiment="http://www.e-lico.eu/data/kupkb/experiment/"
+     xmlns:v2="http://www.e-lico.eu/data/kupkb/v2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:v22="&v2;2">
+    <owl:Ontology rdf:about="http://www.e-lico.eu/data/kupkb/experiment/">
+        <owl:imports rdf:resource="http://www.e-lico.eu/data/kupkb/v2/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/analysisOf -->
+
+    <owl:ObjectProperty rdf:about="&v2;analysisOf"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/produces -->
+
+    <owl:ObjectProperty rdf:about="&v2;produces"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/2DEProteinAnalysis -->
+
+    <owl:Class rdf:about="&v2;2DEProteinAnalysis"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/2DEProteinList -->
+
+    <owl:Class rdf:about="&v2;2DEProteinList"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/GeLC-MSProteinAnalysis -->
+
+    <owl:Class rdf:about="&v2;GeLC-MSProteinAnalysis"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/GeLC-MSProteinList -->
+
+    <owl:Class rdf:about="&v2;GeLC-MSProteinList"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/LC-MS_MS_MS -->
+
+    <owl:Class rdf:about="&v2;LC-MS_MS_MS"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/LC_MS_MS_MS_ProteinList -->
+
+    <owl:Class rdf:about="&v2;LC_MS_MS_MS_ProteinList"/>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/v2/LC-MS/MSProteinAssay -->
+
+    <owl:Class rdf:about="&v2;LC-MS/MSProteinAssay"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Mann_LC-MS_MS_MS_data -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Mann_LC-MS_MS_MS_data">
+        <rdf:type rdf:resource="&v2;LC_MS_MS_MS_ProteinList"/>
+        <rdfs:label>Mann_LC-MS_MS_MS_data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Mann_analysis -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Mann_analysis">
+        <rdf:type rdf:resource="&v2;LC-MS_MS_MS"/>
+        <rdfs:label>Mann_analysis</rdfs:label>
+        <v2:produces rdf:resource="&experiment;Mann_LC-MS_MS_MS_data"/>
+        <v2:analysisOf rdf:resource="&experiment;Mann_experiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Mann_experiment -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Mann_experiment">
+        <rdf:type rdf:resource="&v2;LC-MS/MSProteinAssay"/>
+        <rdfs:label>Mann_experiment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Vlahou_2DE_analysis -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Vlahou_2DE_analysis">
+        <rdf:type rdf:resource="&v2;2DEProteinAnalysis"/>
+        <rdfs:label>Vlahou_2DE_analysis</rdfs:label>
+        <v2:produces rdf:resource="&experiment;Vlahou_2DE_data"/>
+        <v2:analysisOf rdf:resource="&experiment;Vlahou_experiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Vlahou_2DE_data -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Vlahou_2DE_data">
+        <rdf:type rdf:resource="&v2;2DEProteinList"/>
+        <rdfs:label>Vlahou_2DE_data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Vlahou_GeLC_analysis -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Vlahou_GeLC_analysis">
+        <rdf:type rdf:resource="&v2;GeLC-MSProteinAnalysis"/>
+        <rdfs:label>Vlahou_GeLC_analysis</rdfs:label>
+        <v2:produces rdf:resource="&experiment;Vlahou_GeLC_data"/>
+        <v2:analysisOf rdf:resource="&experiment;Vlahou_experiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Vlahou_GeLC_data -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Vlahou_GeLC_data">
+        <rdf:type rdf:resource="&v2;GeLC-MSProteinList"/>
+        <rdfs:label>Vlahou_GeLC_data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.e-lico.eu/data/kupkb/experiment/Vlahou_experiment -->
+
+    <owl:NamedIndividual rdf:about="&experiment;Vlahou_experiment">
+        <rdf:type rdf:resource="&v2;LC-MS/MSProteinAssay"/>
+        <rdfs:label>Vlahou_experiment</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

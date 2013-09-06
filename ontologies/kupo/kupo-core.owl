@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY patterns "http://www.co-ode.org/patterns#" >
+    <!ENTITY kupo "http://www.kupkb.org/data/kupo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.kupkb.org/public/kupo/kupo-core.owl#"
+     xml:base="http://www.kupkb.org/public/kupo/kupo-core.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:kupo="http://www.kupkb.org/data/kupo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.kupkb.org/public/kupo/kupo-core.owl">
+        <owl:imports rdf:resource="http://www.kupkb.org/public/kupo/kupo-cells.owl"/>
+        <owl:imports rdf:resource="http://www.kupkb.org/public/kupo/kupo-experiments.owl"/>
+        <owl:imports rdf:resource="http://www.kupkb.org/public/kupo/kupo-models.owl"/>
+        <owl:imports rdf:resource="http://www.kupkb.org/public/kupo/kupo-relations.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&patterns;createdBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000001 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000001">
+        <rdfs:label xml:lang="en">KUPO core entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000002 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000002">
+        <rdfs:label xml:lang="en">KUPO cell entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000002"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000003 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000003">
+        <rdfs:label xml:lang="en">KUPO anatomy entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000003"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000004 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000004">
+        <rdfs:label xml:lang="en">KUPO model entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000004"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000005 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000005">
+        <rdfs:label xml:lang="en">Animal model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000004"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000005"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000006 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000006">
+        <rdfs:label xml:lang="en">In vitro model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000004"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000004"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000006"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000007 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000007">
+        <rdfs:label xml:lang="en">KUPO disease entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000007"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.kupkb.org/data/kupo/KUPO_0000008 -->
+
+    <owl:Class rdf:about="&kupo;KUPO_0000008">
+        <rdfs:label xml:lang="en">KUPO experiment entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&kupo;KUPO_0000001"/>
+    </owl:Class>
+    <owl:Axiom>
+        <patterns:createdBy rdf:datatype="&xsd;string">http://kupkb.org/populous#OPPL_pattern</patterns:createdBy>
+        <owl:annotatedTarget rdf:resource="&kupo;KUPO_0000001"/>
+        <owl:annotatedSource rdf:resource="&kupo;KUPO_0000008"/>
+        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
